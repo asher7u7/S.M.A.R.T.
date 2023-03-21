@@ -1,0 +1,225 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+/*BARRA DE NAVEGACION*/
+
+div.desplegable
+{
+    display: none;
+}
+
+nav
+{   
+    background-color:  #0404E2;
+    height: 50px;
+    width: 100%;
+    display: block;
+    margin-top: 0%;
+
+}
+
+
+
+ul.menu{
+    list-style: none;
+    display: flex;
+    margin: 10;
+    padding: 0;
+    float: right;
+    overflow: hidden;
+}
+
+li.menu
+{
+    margin: 15px;
+    list-style: none;
+}
+
+.Navegacion a
+{
+    color: white;
+    padding: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.imglogo{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.imglogo2
+{
+    display:none;
+}
+
+#redes
+{
+    display: none;
+}
+
+.RS
+{
+    display: none;
+}
+
+@media screen and (max-width:600px)
+{
+    header nav
+    {   
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        width: 40%;
+        left: -100%;
+        position: fixed; 
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    header nav ul li
+    {
+        float: none;
+        border-bottom: 1px solid #ffffff;
+        position: relative;
+    }
+
+    div.desplegable
+    {
+        display: block;
+        width: 100%;
+        background-color: #0404E2;
+    }
+
+    span
+    {
+        float: right;
+        color: #ffffff;
+        margin: 10px;
+        font-size: 25px;
+    }
+    
+    .imglogo2
+    {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+    }
+    
+    #logo
+    {
+        display: none;
+    }
+
+    #redes
+    {
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        color: #ffffff;
+        margin: 10px;
+        float:none;
+        width: 100%;
+    }
+    
+    .RS
+    {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px)
+{
+    #redes
+    {
+        margin: 0px;
+    }
+}
+
+
+/*ESPACIO DENUNCIA*/
+
+
+
+#contenedor-de{
+    background-color: rgb(231, 231, 231);
+    height: 400px;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
+    border-radius: 2%;
+    
+}
+
+
+#nombre{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 8rem;
+    margin: 20px;
+
+}
+
+#apellido{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 8rem;
+    margin: 20px;
+}
+
+#direccion{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width:  8em;
+    margin: 20px;
+}
+
+#telefono{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 8rem;
+    margin: 20px;
+    
+}
+#email{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 17rem;
+    margin: 20px ;
+    
+}
+#descripcion-caso{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 20rem;
+    margin: 20px ;
+    display: block;
+    
+}
+
