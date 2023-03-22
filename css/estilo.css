@@ -20,7 +20,6 @@ nav
     width: 100%;
     display: block;
     margin-top: 0%;
-
 }
 
 
@@ -36,8 +35,9 @@ ul.menu{
 
 li.menu
 {
-    margin: 15px;
+    margin: 10px;
     list-style: none;
+    margin-top: 15px;
 }
 
 .Navegacion a
@@ -74,6 +74,12 @@ li.menu
 .RS
 {
     display: none;
+}
+
+#user
+{
+    font-size: 20px;
+    margin: 5px;
 }
 
 @media screen and (max-width:600px)
@@ -144,6 +150,11 @@ li.menu
         display: flex;
         width: 100%;
     }
+
+    #user
+    {
+        display: none;
+    }
 }
 
 @media screen and (max-width:450px)
@@ -154,9 +165,42 @@ li.menu
     }
 }
 
+/*INICIO DE SESION*/
 
+.inicio-sesion
+{
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background: #0404E2;
+    width: 35%;
+    height: 30%;
+    box-shadow: inset;
+}
+
+#input-email
+{
+    width: 60%;
+    
+}
+
+#input-contraseña
+{
+    width: 60%;
+}
+
+#iconos-inicio
+{
+    margin: 0%;
+    bottom: 60%;
+
+}
+
+.input-inicio
+{
+    margin: 10%;
+}
 /*ESPACIO DENUNCIA*/
-
 
 
 #contenedor-de{
@@ -165,20 +209,27 @@ li.menu
     width: 30%;
     margin: auto;
     margin-top: 50px;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     box-shadow: 4px 4px 4px rgb(0, 0, 0);
     border-radius: 2%;
-    
+
 }
 
-
+#contenedor-de:hover{
+    transition-duration: 4s;
+    transform: translate(50px);
+}
 #nombre{
-    background-color: black;
-    color: white;
+    color: rgb(0, 0, 0);
     height: 30px;
     width: 8rem;
-    margin: 20px;
+    margin: 20px
+}
 
+#nombre:hover{
+    color: blue;
+    transform:translate(20px)
 }
 
 #apellido{
@@ -223,3 +274,22 @@ li.menu
     
 }
 
+@media screen and (max-width:900px)
+{
+    #contenedor-de{
+        width: auto;
+        height: auto;
+        margin: 10px;
+    }
+
+    
+    #descripcion-caso{
+        width: auto;
+        height: auto;
+    }
+
+    #email{
+        width: auto;
+        height: auto;
+    }
+}
