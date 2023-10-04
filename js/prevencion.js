@@ -1,9 +1,10 @@
-$(document).ready(menu);
+$(document).ready(main);
 
 var contador = 1;
 
-function menu(){
-	$('#btn').onclick(function(){ 
+function main(){
+	$('#btn').click(function(){
+		// $('nav').toggle(); 
 
 		if(contador == 1){
 			$('.Navegacion').animate({

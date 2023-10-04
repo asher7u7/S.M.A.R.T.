@@ -90,7 +90,7 @@ li.menu
         flex-direction: column;
         justify-content: start;
         height: 100%;
-        width: 40%;
+        width: 60%;
         left: -100%;
         position: fixed; 
     }
@@ -158,7 +158,24 @@ li.menu
 }
 
 @media screen and (max-width:450px)
+
+
 {
+    div.prevención
+    { 
+        display:block;
+    }
+
+    ul li.menu_prevencion
+    {
+        font-size: 15px;
+        border-bottom: 0px;
+        text-align: justify center;
+        list-style:none;
+        margin-left: 10%;
+        margin-top: 5px;
+        float: center;
+    }
     #redes
     {
         margin: 0px;
